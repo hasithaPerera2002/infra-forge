@@ -7,7 +7,7 @@ InfraForge combines a drag-and-drop canvas with an intelligent AI agent that ask
 ![InfraForge](https://img.shields.io/badge/status-MVP-yellow)
 ![Terraform](https://img.shields.io/badge/Terraform-1.5+-623CE4?logo=terraform)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi)
+![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js)
 
 ## Why InfraForge?
 
@@ -29,9 +29,12 @@ cd infra-forge
 # Using Docker (recommended)
 docker-compose up -d
 
-# Or run locally
-cd packages/frontend && npm install && npm run dev
+# Or run locally (use two terminals)
+# Terminal 1 - Backend
 cd packages/backend && npm install && npm run dev
+
+# Terminal 2 - Frontend
+cd packages/frontend && npm install && npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) to access the visual builder.
@@ -42,8 +45,7 @@ Open [http://localhost:5173](http://localhost:5173) to access the visual builder
 infraforge/
 ├── packages/
 │   ├── frontend/     # React + Vite + React Flow
-│   └── backend/      # FastAPI + AI agent
-├── terraform-templates/  # Reference implementations
+│   └── backend/      # Node.js + Express
 └── docker-compose.yml
 ```
 
